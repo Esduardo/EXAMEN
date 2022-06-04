@@ -4,7 +4,7 @@ public class Tienda {
     Pedido pedido;
     int opcion;
     String nombre;
-    Cliente cliente;
+    Comprador comprador;
 
     public Tienda(int opcion, String nombre){
         this.opcion = opcion;
@@ -12,7 +12,7 @@ public class Tienda {
     }
 
     public Pedido sendPedido(){
-        return pedido = new Pedido(cliente = new Cliente(nombre), opcion);
+        return pedido = new Pedido(comprador = new Comprador(nombre), opcion);
     }
 
 }

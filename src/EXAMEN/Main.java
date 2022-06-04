@@ -15,14 +15,14 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
-                System.out.println("+            Pizzeria Dominos              +");
-                System.out.println("+              Bienvenidos                 +");
-                System.out.println("+      Seleccione una de las opciones      +");
-                System.out.println("+           1. Mostrar catalgo             +");
-                System.out.println("+           2. Ver pedidos                 +");
-                System.out.println("+           3. Salir                       +");
-                System.out.print("  + opcion: ");
+                System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
+                System.out.println("+            Pizzeria Dominos                  +");
+                System.out.println("+              Bienvenidos                     +");
+                System.out.println("+      Seleccione una de las opciones          +");
+                System.out.println("+           1. Mostrar catalogo                +");
+                System.out.println("+           2. Ver pedidos                     +");
+                System.out.println("+           3. Salir                           +");
+                System.out.print("+++++ opcion: ");
                 opcion = entrada.nextInt();
 
                 switch (opcion){
@@ -46,28 +46,37 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         int  pre, opc;
         String nombre;
-            System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.println("+              registro de nombre              +");
-            System.out.print("´Nombre: ");
-            nombre = entrada.next();
+
             System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
             System.out.println("+                  Catalogo                    +");
             System.out.println("+     1. Pizza Hawaiana      (grande)  $500.00 +");
             System.out.println("+     2. Pizza Champinones   (mediana) $250    +");
             System.out.println("+     3. Pizza peperoni      (chica)   $150    +");
-            System.out.println("pedidos de clientes?                           + ");
-            System.out.print("     opcion: ");
+            System.out.println("pedidos - elije una                           + ");
+            System.out.print("                     opcion: ");
             opc = entrada.nextInt();
+            System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println("+              registro de nombre              +");
+            System.out.print("+++++Nombre: ");
+            nombre = entrada.next();
+
+
             Tienda objetotienda = new Tienda((int) (opc-1), nombre);
+
 
             pedido1 = objetotienda.sendPedido();
             pizza1 = pedido1.SendPizza();
 
 
-            System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
+
+
+            System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++");
             System.out.println("+  Nombre Cliente: " + pedido1.getCliente().getnombre());
             System.out.println("+           Pizza: " + pizza1.getNombrePizza());
-            System.out.println("+          precio: " + pizza1.getPrecio());
+            System.out.println("+          precio: $" + pizza1.getPrecio());
             System.out.println("+          tamaño: " + pizza1.getTamano());
+        }
+        public static void mostrar(){
+
         }
 }

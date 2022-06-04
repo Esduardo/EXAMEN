@@ -1,14 +1,14 @@
 package EXAMEN.MODELS;
 
 public class Pedido {
-    Cliente cliente;
+    Comprador comprador;
     Catalogo Pizzas = new Catalogo();
 
     int opcion;
     Pizza pizza1;
 
-    public Pedido(Cliente cliente, int opcion){
-        this.cliente = cliente;
+    public Pedido(Comprador comprador, int opcion){
+        this.comprador = comprador;
         this.opcion = opcion;
     }
 
@@ -17,7 +17,7 @@ public class Pedido {
         return pizza1;
     }
 
-    public Cliente getCliente(){
-        return cliente;
+    public Comprador getCliente(){
+        return comprador;
     }
 }
