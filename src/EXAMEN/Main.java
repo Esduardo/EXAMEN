@@ -1,5 +1,9 @@
 package EXAMEN;
 
+/*       Equipo de trabajo
+221213 - Marco Darinel Ortiz Diaz
+221214 - Esduardo Palomeque Roblero */
+
 import EXAMEN.MODELS.Pedido;
 import EXAMEN.MODELS.Pizza;
 import EXAMEN.MODELS.Tienda;
